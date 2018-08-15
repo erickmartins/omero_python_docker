@@ -28,3 +28,4 @@ RUN conda install -y \
 # Setup application
 ADD ./CreateImageAdvanced.py /python-code/
 ADD ./Parse_OMERO_Properties.py /python-code/
+ADD ./Connect_to_OMERO.py /python-code/
