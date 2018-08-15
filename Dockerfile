@@ -13,10 +13,15 @@ RUN rm Miniconda-latest-Linux-x86_64.sh
 ENV PATH=/miniconda/bin:${PATH}
 RUN conda update -y conda
 
+# Set up bioconda channel
+
+RUN conda config --add channels defaults
+RUN conda config --add channels conda-forge
+RUN conda config --add channels bioconda
+
+
 # Python packages from conda
 RUN conda install -y \
-    scikit-image \
-    flask \
-    pillow
+    python-omero
 
 # Setup application
