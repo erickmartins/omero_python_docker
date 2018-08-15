@@ -11,27 +11,32 @@
 FOR TRAINING PURPOSES ONLY!
 """
 
-import omero
-import sys
-import codecs
+# import omero
+# import sys
+# import codecs
 
-client = omero.client()
+# client = omero.client()
 
-omeroProperties = client.getProperties().getPropertiesForPrefix('omero')
+# omeroProperties = client.getProperties().getPropertiesForPrefix('omero')
 
-# Handle printing of unicode
-sys.stdout = codecs.getwriter('utf8')(sys.stdout)
+# # Handle printing of unicode
+# sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 
-# Configuration
-# =================================================================
-# These values will be imported by all the other training scripts.
-HOST = omeroProperties.get('omero.host', 'localhost')
-PORT = omeroProperties.get('omero.port', 4064)
-USERNAME = omeroProperties.get('omero.user')
-PASSWORD = omeroProperties.get('omero.pass')
-OMERO_WEB_HOST = omeroProperties.get('omero.webhost')
-SERVER_NAME = omeroProperties.get('omero.servername')
-projectId = omeroProperties.get('omero.projectid')
-datasetId = omeroProperties.get('omero.datasetid')
-imageId = omeroProperties.get('omero.imageid')
-plateId = omeroProperties.get('omero.plateid')
+# # Configuration
+# # =================================================================
+# # These values will be imported by all the other training scripts.
+# HOST = omeroProperties.get('omero.host', 'localhost')
+# PORT = omeroProperties.get('omero.port', 4064)
+# USERNAME = omeroProperties.get('omero.user')
+# PASSWORD = omeroProperties.get('omero.pass')
+# OMERO_WEB_HOST = omeroProperties.get('omero.webhost')
+# SERVER_NAME = omeroProperties.get('omero.servername')
+# projectId = omeroProperties.get('omero.projectid')
+# datasetId = omeroProperties.get('omero.datasetid')
+# imageId = omeroProperties.get('omero.imageid')
+# plateId = omeroProperties.get('omero.plateid')
+
+HOST = 'camdu.warwick.ac.uk'
+PORT = 4064
+USERNAME = "u1473606"
+PASSWORD = "e2303l1506"
