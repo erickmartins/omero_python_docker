@@ -1,7 +1,7 @@
 # Example Dockerfile for setting up Docker container with MiniConda and an
 # example app.
 
-FROM ubuntu:16.04.3
+FROM ubuntu:16.04
 
 # System packages 
 RUN apt-get update && apt-get install -y curl
