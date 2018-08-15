@@ -74,7 +74,7 @@ def planeGen():
                 yield pixels[t].getPlane(0, c, z)
 
 
-desc = ("Image created from Image concatenating multiple tiffs")
+desc = ("Image created from concatenating multiple tiffs")
 print(sizeZ, sizeC, sizeT)
 new_img = conn.createImageFromNumpySeq(
     planeGen(), "SingleTimelapse", sizeZ, sizeC, sizeT, description=desc,
