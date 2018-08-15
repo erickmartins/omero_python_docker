@@ -22,6 +22,9 @@ RUN conda config --add channels bioconda
 
 # Python packages from conda
 RUN conda install -y \
-    python-omero
+    python-omero \
+    numpy
 
 # Setup application
+ADD ./CreateImageAdvanced.py /python-code/
+ADD ./Parse_OMERO_Properties.py /python-code/
