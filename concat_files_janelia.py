@@ -70,7 +70,7 @@ def planeGen():
     for z in range(sizeZ):          # all Z sections
         for c in range(sizeC):
             for t in range(sizeT):      # all time-points
-                # print("Plane: ", z, c, t)
+                print("Plane: ", z, c, t)
                 yield pixels[t].getPlane(0, c, z)
 
 
