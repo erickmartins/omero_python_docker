@@ -38,5 +38,10 @@ FOR TRAINING PURPOSES ONLY!
 
 HOST = 'camdu.warwick.ac.uk'
 PORT = 4064
+<<<<<<< HEAD
 USERNAME = USERNAMEHERE
 PASSWORD = PASSWORDHERE
+=======
+USERNAME = ''
+PASSWORD = ''
+>>>>>>> 60cc2ae... removed some info
