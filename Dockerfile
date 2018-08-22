@@ -30,3 +30,4 @@ ADD ./CreateImageAdvanced.py /python-code/
 ADD ./Parse_OMERO_Properties.py /python-code/
 ADD ./Connect_to_OMERO.py /python-code/
 ADD ./concat_files_janelia.py /python-code/
+ADD ./save_ome_tiff.py /python-code/
